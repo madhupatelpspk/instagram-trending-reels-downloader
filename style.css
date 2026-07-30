@@ -1,0 +1,333 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* Navbar */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,20,30,.75);
+backdrop-filter:blur(20px);
+z-index:999;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:22px;
+font-weight:700;
+}
+
+.logo img{
+width:46px;
+height:46px;
+border-radius:12px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff4d6d;
+}
+
+/* Hero */
+
+.hero{
+padding:150px 20px 80px;
+text-align:center;
+}
+
+.hero-logo{
+width:120px;
+height:120px;
+border-radius:28px;
+box-shadow:0 0 40px rgba(255,77,109,.45);
+}
+
+.hero h1{
+font-size:56px;
+margin-top:25px;
+font-weight:700;
+}
+
+.hero p{
+margin:20px auto;
+max-width:650px;
+font-size:18px;
+line-height:1.8;
+color:#b8bcc8;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.buttons a{
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.35s;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.download{
+background:#ff4d6d;
+color:#fff;
+}
+
+.download:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(255,77,109,.45);
+}
+
+.buttons a:not(.download){
+background:#1a2232;
+color:#fff;
+}
+
+.buttons a:not(.download):hover{
+background:#293447;
+}
+
+/* Stats */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:70px 8%;
+}
+
+.card{
+background:#161b22;
+border-radius:20px;
+padding:35px;
+text-align:center;
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.card h2{
+font-size:34px;
+color:#ff4d6d;
+margin-bottom:10px;
+}
+
+/* Section */
+
+section{
+padding:90px 8%;
+}
+
+section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+/* Features */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature{
+background:#161b22;
+padding:35px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+}
+
+.feature i{
+font-size:42px;
+color:#ff4d6d;
+margin-bottom:20px;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+}
+
+/* Projects */
+
+.project{
+background:#161b22;
+padding:30px;
+margin-bottom:20px;
+border-radius:18px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateX(8px);
+}
+
+/* Gallery */
+
+.screens{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.screens img{
+width:100%;
+border-radius:20px;
+transition:.35s;
+}
+
+.screens img:hover{
+transform:scale(1.04);
+}
+
+/* About */
+
+#about p{
+max-width:850px;
+margin:auto;
+text-align:center;
+line-height:2;
+font-size:18px;
+color:#c8ced8;
+}
+
+/* Donate */
+
+.donate{
+text-align:center;
+}
+
+.donate a{
+display:inline-block;
+margin-top:25px;
+padding:16px 35px;
+background:#ff4d6d;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+/* Contact */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.contact-grid a{
+background:#161b22;
+padding:25px;
+border-radius:18px;
+text-decoration:none;
+color:white;
+text-align:center;
+font-size:18px;
+transition:.3s;
+}
+
+.contact-grid a:hover{
+background:#ff4d6d;
+}
+
+/* Footer */
+
+footer{
+padding:40px;
+text-align:center;
+background:#0a0d13;
+color:#9ca3af;
+margin-top:80px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+padding:15px;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.buttons a{
+width:100%;
+max-width:320px;
+justify-content:center;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+padding:40px 20px;
+gap:15px;
+}
+
+section{
+padding:70px 20px;
+}
+
+section h2{
+font-size:30px;
+}
+
+  }
